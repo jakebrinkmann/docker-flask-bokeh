@@ -1,6 +1,5 @@
-# deadly-prairie-dog
 
-Simple browser-based plots, generated from python
+Simple browser-based plots, generated from python, using the latest libraries:
 
 * [plotly/dash](#dash)
 * [bokeh/bokeh](#bokeh)
@@ -15,7 +14,6 @@ Simple browser-based plots, generated from python
 Start the server, running at [localhost:8050](http://localhost:8050/)
 
 ```
-cd deadly-prairie-dog/
 docker build -t dash-app -f Dockerfile-Dash .
 docker run -it --rm --name=plotly-dash -p 127.0.0.1:8050:8050 dash-app
 ```
@@ -31,7 +29,6 @@ docker run -it --rm --name=plotly-dash -p 127.0.0.1:8050:8050 dash-app
 
 Start the server, running at [localhost:5000](http://localhost:5000/)
 ```
-cd deadly-prairie-dog/
 docker build -t bokeh-app -f Dockerfile-Bokeh .
 docker run -it --rm --name=bokeh-flask -p 127.0.0.1:5000:5000 bokeh-app
 ```
