@@ -1,0 +1,7 @@
+FROM python:2.7
+
+COPY ./bokeh-app /usr/local/app
+WORKDIR /usr/local/app
+
+RUN pip install --no-cache-dir -r requirements.txt
+ENTRYPOINT ["python", "app.py"]
